@@ -1,0 +1,29 @@
+{% extends 'front/base.html' %} {% load static %} {% block content %}
+<div class="wrapper">
+    <div class="profile-content section">
+        <div class="container">
+            <div class="row">
+                <div class="profile-picture">
+                    <div></div>
+                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                        <br></br>
+                        <div class="fileinput-new img-no-padding">
+                            <img src="{% static 'front/img/faces/ktp.jpeg' %}" alt="...">
+                        </div>
+                        <div class="name">
+                            <h4 class="title text-center">Bintang Fajrul<br /><small>Mahasiswa</small></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p>Mahasiswa pada umumnya yang hari-harinya di isi dengan mengerjakan tugas nongkrong dan tidak lupa untuk membantu orang tua di rumah</p>
+                    <br />
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>
+{% endblock content %}
