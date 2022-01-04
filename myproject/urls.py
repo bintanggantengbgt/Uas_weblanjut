@@ -17,6 +17,7 @@ urlpatterns = [
     path('dashboard/', include('blog.urls')),
    
     path('',index, name="index"),
+    path('filter/<str:nama>',artikel_filter, name='artikel_filter'),
     path('artikel/<int:id>/detail/', detail_artikel, name='detail_artikel'),
     path('about/',about, name='about'),
 
